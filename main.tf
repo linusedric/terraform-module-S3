@@ -31,6 +31,6 @@ resource "aws_s3_bucket_versioning" "this" {
 resource "aws_s3_bucket_ownership_controls" "this" {
   bucket = aws_s3_bucket.this.id
   rule {
-    object_ownership = "Bucket_Owner_Preferred"
+    object_ownership = "BucketOwnerPreferred"
   }
 }
